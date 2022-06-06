@@ -1,0 +1,190 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Header Section Start */
+section header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+section header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+section header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+section header ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    line-height: 10px;
+}
+section header ul li img{
+    width: 60%;
+}
+
+section header ul li button{
+    background: #397dfc;
+    border: none;
+    outline: none;
+    padding: 6px 10px;
+    margin-left: -15px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* Header Section End */
+/* Search Section Start */
+section .main{
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .main .box{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+section .main .box .search{
+    width: 100%;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 5px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    color: black;
+    outline: none;
+    position: relative;
+    transition: 0.2s ease-in-out;
+}
+section .main .box .search:hover{
+    box-shadow: 4px 4px 8px rgb(222, 222, 222), -2px -2px 4px rgb(222, 222, 222);
+}
+section .main .box .icon{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 12px 20px;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;  
+}
+section .main .box .icon .mic{
+    padding: 0px 0px 0px 0px;
+}
+section .main .buttons{
+    margin: 20px 0px 0px;
+}
+section .main .buttons button{
+    margin: 0 22px;
+    padding: 10px 14px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid #f8f8f8;
+    outline: none;
+    cursor: pointer;
+    background: #f8f8f8;
+}
+section .main .buttons button:hover{
+    border: 1px solid #e5e5e5;
+}
+section .main .lang{
+    margin-top: 30px;
+    color: black;
+}
+section .main .lang a{
+    text-decoration: none;
+}
+section .main .lang a:hover{
+    text-decoration: underline;
+}
+/* Search Section End */
+/* Footer Section Start */
+section .footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #f2f2f2;
+    width: 100%;
+}
+section .footer .region p{
+    margin-left: 40px;
+    color: #5f6368;
+}
+section .footer .row{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.122);
+}
+.footer .row ul{
+    display: flex;
+}
+.footer .row ul li{
+    list-style: none;
+}
+section .footer .row ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #5f6368;
+    margin-right: 25px;
+}
+section .footer .row ul li a:hover{
+    text-decoration: underline;
+}
+/* Footer Section End */
+/*Desktop*/
+@media (min-width:1024px){
+
+}
+
+/*Tablet View*/
+@media (min-width:769px) and (max-width:1023px){
+    section header ul li button{
+    
+    }
+}
+
+
+
+/*Mobile View*/
+@media (max-width:768px){
+    section .main .box .search{
+        width: 78%;
+    }
+    section .main .box .icon{
+        width: 84%;
+    }
+    section .footer .row ul{
+        display: block;
+    }
+    section .main .box .search {
+        width: 84%;
+    }
+    section header ul li button{
+        padding: 8px;
+        font-size: 10px;
+    }
+}
